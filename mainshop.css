@@ -1,0 +1,119 @@
+.nav-style a:link,
+.nav-style a:active {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#logo {
+  font: 3vw Economica;
+  letter-spacing: 0.3em;
+  padding-top: 5px;
+  line-height: 3vmax;
+}
+
+.nav-style {
+  float: right;
+  border-bottom: 0.01em solid black;
+  padding: 0vh 5vw 2vh 0vw;
+  
+  margin-top:-20px;
+}
+
+nav ul li {
+  display: block;
+  text-decoration: none;
+  
+}
+
+.nav-style a {
+  color: black;
+  font: 1.1vmax Ariel;
+}
+
+nav ul li a:hover {
+  font: 1.1vmax Ariel thick;
+  font-weight: bold;
+   text-decoration: none;
+}
+
+#cart-icon{
+  margin-top:-1vh;
+  font-size:4vmin;
+  color:#800000;
+}
+#cart-icon a{border:none;}
+
+
+.simpleCart_quantity {
+  color:#fff;
+  font-size:50%;
+  background-color:#e74c3c;
+  position:absolute;
+  top:4%;
+  left:94.5%;
+  -webkit-transform:translate(10%,-8%);
+  -moz-transform:translate(-50%,-90%);
+  transform:translate(10%,-8%);
+  padding:2px 7px;
+  border-radius:100%;
+}
+
+
+#sidenav {
+  margin-top: 30px;
+  position: absolute;
+}
+
+#sidenav a:link,
+p {
+  margin: 16px 85px;
+  display: block;
+  font: 16px Ariel #000000;
+  color: black;
+}
+
+.products-col {
+  margin-left: 20vw;
+}
+
+.main {
+  z-index: 3;
+  position: relative;
+  padding: 40px 10px 0 0;
+}
+
+.smaller-img {
+  width: 20vw;
+  height: 27vh;
+}
+
+figcaption {
+  text-align: left;
+}
+
+figcaption span {
+  font-weight: 700;
+}
+
+.flex-grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.col {
+  flex: 0 1 32%;
+  margin: 10px 4px;
+  text-align:center;
+}
+
+h2{
+  text-align:center;
+  font: 5vmin Verdana black;
+  padding: -1vh 0 2vh 0;
+  font-weight:700;
+}
+
+.item-name{
+  padding:;
+}

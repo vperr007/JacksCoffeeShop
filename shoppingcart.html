@@ -1,0 +1,60 @@
+<head>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
+<link rel="stylesheet"  href="shoppingcart.css">
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/43f8a9f50f.js"></script>
+<script src = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/simplecartjs/3.0.5/simplecart.min.js'></script>
+<script src='script.js'></script>
+
+
+</head>
+
+
+
+
+
+
+
+
+
+<nav>
+  <ul id='show-cart'>
+    <li id='logo' style='padding-top:'>JACK'S COFFEE SHOP</li>
+    <li class = 'nav-style' ><a href='shoppingcart.html' ><i class="fa fa-cart-plus" id='cart-icon' aria-hidden="true"></a></i></li>
+    <li class = 'nav-style'><a href='#'>ABOUT US</a></li>
+    <li class = 'nav-style'><a href='future-projects.html'>FUTURE PRODUCTS</a></li>
+    <li class = 'nav-style'  id='shop'><a href='mainshop.html'>SHOP </a></li>
+    <li class='nav-style'><a href='http://codepen.io/vperr007/full/pPzYZG/'>HOME</a></li>
+  </ul>
+</nav>
+
+
+<h1>MY CART</h1>
+
+
+<div>
+<div class="simpleCart_items" style='position:relative'></div>
+
+
+  <div id='totalFloat'>Total<div class="simpleCart_total"  ></div></div>
+<button id='checkout-btn' ><a href="javascript:;" class="simpleCart_checkout" >Proceed to CHECKOUT</a></button>
+</div>
+
+
+<script>
+  var items = 1;
+$(document).ready(function(){
+  if (items != 0) {
+    $("#cart-icon").append("<div class='simpleCart_quantity'></div>")
+  }
+});
+
+</script>

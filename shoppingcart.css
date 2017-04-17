@@ -1,0 +1,139 @@
+.nav-style a:link,
+.nav-style a:active {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#cart-icon{
+  margin-top:-1vh;
+  font-size:4vmin;
+  color:#800000;
+}
+#cart-icon a{border:none;}
+
+
+.simpleCart_quantity {
+  color:#fff;
+  font-size:50%;
+  background-color:#e74c3c;
+  position:absolute;
+  top:4%;
+  left:94%;
+  -webkit-transform:translate(10%,-8%);
+  -moz-transform:translate(-50%,-90%);
+  transform:translate(10%,-8%);
+  padding:2px 7px;
+  border-radius:100%;
+}
+
+
+#logo {
+  font: 3vw Economica;
+  letter-spacing: 0.3em;
+  padding-top: 5px;
+  line-height: 3vmax;
+}
+
+.nav-style {
+  float: right;
+  border-bottom: 0.01em solid black;
+  padding: 0vh 5vw 2vh 0vw;
+  
+  margin-top:-20px;
+}
+
+nav ul li {
+  display: block;
+  text-decoration: none;
+  
+}
+
+.nav-style a {
+  color: black;
+  font: 1.1vmax Ariel;
+}
+
+nav ul li a:hover {
+  font: 1.1vmax Ariel thick;
+  font-weight: bold;
+  text-decoration: none;
+}
+table{
+  border-spacing: 2vw;
+  margin: 0 19vw;
+ 
+  
+}
+
+
+
+th {padding: 0vh 1vw 1vh 1vw;}
+td    {padding: 2vh 0vw 2vh 0vw;
+border-bottom: grey 1px solid;
+}
+
+.item-thumb img  {width:10vw;}
+
+.item-name{
+  padding-right:4vw;
+  padding-left:3vw;
+}
+
+
+
+.item-quantity{padding-left:1vw;}
+.item-price{padding-right:5vw;}
+.item-total{padding-left:4vw; position:relative;}
+.item-remove{ padding:0 2vw 0 2vw;
+color:red;}
+.item-remove a{color:grey;
+  font-weight:700;
+text-decoration:none;}
+.simpleCart_items table .item-decrement,
+.simpleCart_items table .item-increment{
+  padding: 0 -40px 0 -60px; }
+
+#totalFloat{
+  position:absolute;
+  left:66.1vw;
+font-weight:700;
+  margin-top: 3vh;
+  font-size:3.9vmin; text-align: center;
+font-family:Times New Roman;
+}
+
+#checkout-btn{
+  position:relative;
+  margin:6vh 0 2vh 27vw ;
+  border-radius: 15px 50px 50px 15px;
+  
+  text-decoration:none;
+  background-color:#B70000;
+  border: none; 
+   padding: 9px 13px 8px 17px;
+  
+  
+}
+
+#checkout-btn a{
+ font: 2vmin Verdana;
+  text-decoration:none;
+  color:white; font-weight:700;
+  
+}
+
+.clearfix {
+  overflow: hidden;
+}
+
+h1{
+  text-align:center;
+  font: 5vmin Verdana black;
+  padding: 5vh 0 2vh 0;
+}
+
+.headerRow{
+      background-color: #080808;
+      color:#fff;
+      font-family:Times New Roman;
+}
