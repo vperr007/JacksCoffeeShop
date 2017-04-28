@@ -1,0 +1,79 @@
+@import 'nav-template'
+
+#sidenav
+  margin-top: 30px
+  position: absolute
+  @media #{$tablet}
+    margin-top: -20px
+  a:link
+    margin: 10px 65px
+    display: block
+    font: 16px Ariel #000000
+    color: black
+    @media #{$phones}
+      display: none
+    @media #{$tablet}
+      margin: 0px 15px
+      font-size: 13px
+h4
+  margin: 16px 65px
+  display: block
+  font: 16px Ariel #000000
+  color: black
+  @media #{$phones}
+    display: none
+  @media #{$tablet}
+    margin: 16px 15px
+
+.products-col
+  margin: -12vh 0 -9vh  20vw
+  @media #{$lg-phone}
+    margin: -12vh 0 -9vh  1vw
+
+.main
+  z-index: 3
+  position: relative
+  padding: 40px 10px 0 0
+
+.smaller-img
+  width: 20vw
+  height: 27vh
+
+figcaption
+  text-align: left
+  span
+    font-weight: 700
+
+.flex-grid
+  display: flex
+  flex-flow: row wrap
+  margin: 0
+
+.col
+  flex: 0 1 32%
+  margin: 10px 4px
+  text-align: center
+  @media #{$tablet}
+    margin: 10px -2px
+  @media #{$lg-phone}
+    flex: 0 1 32%
+    margin: 10px 2px
+  @media #{$phone}
+    flex: 0 1 44%
+    margin: 10px 1px
+
+h2
+  text-align: center
+  font: 6vmin Verdana black
+  padding: 1vh 0 2vh 0
+  margin-right: 6%
+  font-weight: 700
+  @media #{$phones}
+    padding: 5vh 0 1vh 0
+    font-size: 3vmax
+  @media #{$tablet}
+    padding: 10vh 0 1vh 0
+    font-size: 5vmin
+  @media #{$laptop-up}
+    padding: 8vh 0 1vh 0
+    margin-right: 2%

@@ -3,7 +3,24 @@ $(document).ready(function(){
   if (items != 0) {
     $("#cart-icon").append("<div class='simpleCart_quantity'></div>")
   }
-});
+  else{
+    simpleCart.empty();
+    window.location.reload();
+  }
+function reloadQuantity(){
+  var numitems = simpleCart.quantity();
+  console.log(numitems);
+  if(numitems===0 ){
+    var emptycart = 'Your Shopping Cart is Empty';
+    $('#remove-table').html(emptycart);
+  }
+}
+reloadQuantity();
+
+
+
+
+  });
 
 
 
@@ -40,11 +57,15 @@ simpleCart({
       label: false
     }
   ],
-  // "div" or "table" - builds the cart as a 
+  // "div" or "table" - builds the cart as a
   // table or collection of divs
   cartStyle: "table"
 
 });
 
-simpleCart.total();
-
+// $(document).ready(function(){
+// if(lol==='3'){
+//
+// }
+//
+// })
