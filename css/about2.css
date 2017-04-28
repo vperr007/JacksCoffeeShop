@@ -1,0 +1,37 @@
+#fixme {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; }
+
+/* prevent overlap */
+body {
+  padding-top: 5px; }
+
+@media screen and (min-width: 0px) and (max-width: 380px) {
+  body {
+    margin: 0 auto !important; }
+
+  li {
+    display: inline-block;
+    font-size: 10px;
+    padding: 10px -15px 10px -15px; }
+
+  #logo {
+    font-family: Economica;
+    font-size: 30px; }
+
+  .nav-style {
+    border-bottom: 1px solid black; }
+    .nav-style a {
+      list-style-type: none;
+      text-decoration: none;
+      color: black;
+      font-size: 11px;
+      padding: 0 5px 0 5px; }
+      .nav-style a:hover {
+        font: 12px Ariel thick;
+        font-weight: bold;
+        text-decoration: none; } }
+
+/*# sourceMappingURL=about2.css.map */

@@ -1,0 +1,49 @@
+body {
+  background-image: url("https://c1.staticflickr.com/3/2894/33856270151_93e60fc9a6_h.jpg");
+  background-size: 100% 103%;
+  background-repeat: no-repeat;
+  height: 100vh; }
+
+nav ul {
+  float: right;
+  list-style-type: none; }
+  nav ul li {
+    display: inline-block;
+    padding: 5px 30px 10px;
+    border-bottom: 4px dotted #ffffff;
+    text-decoration: none; }
+    nav ul li a {
+      color: white;
+      font: 1.2vmax Ariel;
+      font-weight: 500;
+      letter-spacing: 0.2em; }
+      nav ul li a:hover {
+        color: yellow;
+        font: 1.4vmax Ariel thick;
+        font-weight: bold;
+        text-decoration: none; }
+
+h1 {
+  color: white;
+  font-family: Economica;
+  padding: 14vh 8vw;
+  line-height: 10vmax;
+  font-size: 10vmax;
+  letter-spacing: 0.2em; }
+
+#shop-btn {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  color: white;
+  bottom: 10vh;
+  left: 13vw;
+  position: relative; }
+  #shop-btn a:hover {
+    color: yellow;
+    text-decoration: none; }
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

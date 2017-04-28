@@ -1,0 +1,52 @@
+@import 'nav-template'
+
+
+.top-pic
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('https://c1.staticflickr.com/4/3948/34044449856_0602d4e2eb_h.jpg')
+  width: 90vw
+  height: 54vh
+  background-size: 100% 100%
+  margin-left: 4%
+
+#header-text
+  font-family: 'Fjalla One', sans-serif
+  font-size: 9vmax
+  color: #e3b20a
+  position: relative
+  margin: 4vh
+  top: 10vh
+
+.flex-container
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-direction: row
+  flex-direction: row
+  -webkit-justify-content: space-between
+  justify-content: space-between
+  width: 90vw
+  margin: 0 auto
+  margin-left: 3vw
+  padding: 2vh 0 0 0
+
+.products
+  height: 25vh
+  width: 28vw
+
+.add-text
+  visibility: hidden
+  position: relative
+  margin-top: -19%
+  height: 7vh
+  color: white
+  font: 4vmin Times New Roman
+  font-weight: 700
+  text-align: center
+
+.products:hover + .add-text
+  visibility: visible
+  background-color: rgba(0, 0, 0, 0.5)
+
+.flex-item
+  flex: auto
+  -webkit-flex: auto
+  padding: 0 2vw 0 1vw
