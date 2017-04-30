@@ -1,0 +1,57 @@
+@import "mediaq"
+
+body
+  background-image: url('https://c1.staticflickr.com/3/2894/33856270151_93e60fc9a6_h.jpg')
+  background-size: 100% 103%
+  background-repeat: no-repeat
+  height: 100vh
+
+nav ul
+  float: right
+  list-style-type: none
+  li
+    display: inline-block
+    padding: 1vh 2vw 2vh 0
+    border-bottom: 1vw dotted #ffffff
+    text-decoration: none
+    a
+      color: white
+      font: 1.8vh Ariel
+      font-weight: 500
+      letter-spacing: 0.2em
+      &:hover
+        color: yellow
+        font: 1.8vh Ariel thick
+        font-weight: 600
+        text-decoration: none
+
+h1
+  color: #fff
+  font-family: Economica
+  padding: 14vh 8vw
+  line-height: 12vw
+  font-size: 10vw
+  padding-top: 15vh
+  letter-spacing: 0.2em
+  @media #{$phone}
+    padding-top: 0
+    padding-top: 40vh
+  @media #{$tablet}
+    padding-top: 20vh
+
+#shop-btn
+  background-color: rgba(0, 0, 0, 0.3)
+  border: 2px solid white
+  color: white
+  bottom: 10vh
+  left: 11%
+  position: relative
+  font-size: 2vh
+  a:hover
+    color: yellow
+    text-decoration: none
+
+a
+  &:link, &:visited
+    color: white
+    text-decoration: none
