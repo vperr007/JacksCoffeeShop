@@ -11,36 +11,52 @@ nav ul
   list-style-type: none
   li
     display: inline-block
-    padding: 5px 30px 10px
+    padding: 1vh 2vw 2vh 0
     border-bottom: 4px dotted #ffffff
     text-decoration: none
+    @media #{$laptop}
+      padding-left: 3vw
     a
       color: white
-      font: 1.2vmax Ariel
+      font: 1.7vw Ariel
       font-weight: 500
       letter-spacing: 0.2em
+      @media #{$laptop}
+        font-size: 1.2vw
       &:hover
         color: yellow
-        font: 1.4vmax Ariel thick
-        font-weight: bold
+        font: 1.8vw Ariel thick
+        font-weight: 500
         text-decoration: none
-
+      @media #{$laptop}
+        font-size: 1.2vw
 h1
-  color: white
+  color: #fff
   font-family: Economica
   padding: 14vh 8vw
-  line-height: 10vmax
-  font-size: 10vmax
+  line-height: 12vw
+  font-size: 10vw
+  padding-top: 15vh
   letter-spacing: 0.2em
-
+  @media #{$phone}
+    padding-top: 20vh
+  @media #{$tablet}
+    padding-top: 20vw
+  @media #{$laptop}
+    padding-top: 13vh
+    line-height: 10vw
+    font-size: 10vw
 
 #shop-btn
   background-color: rgba(0, 0, 0, 0.3)
   border: 2px solid white
   color: white
   bottom: 10vh
-  left: 13vw
+  left: 11%
   position: relative
+  font-size: 2vh
+  @media #{$laptop}
+    left: 15%
   a:hover
     color: yellow
     text-decoration: none
