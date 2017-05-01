@@ -1,136 +1,71 @@
-.nav-style a:link, .nav-style a:active {
-  list-style-type: none;
-  text-decoration: none; }
-
 #logo {
   font-family: Economica;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1vw;
   padding-top: 5px;
-  line-height: 3vmax;
-  margin-left: -20px; }
-  @media screen and (min-width: 360px) and (max-width: 599px) {
-    #logo {
-      letter-spacing: 0.2em;
-      font-size: 3.4vmin;
-      line-height: 1.3vmax; } }
-  @media screen and (min-width: 0px) and (max-width: 380px) {
-    #logo {
-      font-size: 3.6vmin;
-      letter-spacing: 0.1em; } }
+  margin-left: -30px;
+  font-size: 4.5vw; }
   @media screen and (min-width: 600px) and (max-width: 900px) {
     #logo {
-      font-size: 3.5vmin; } }
-  @media screen and (min-width: 901px) {
+      font-size: 5vw; } }
+  @media laptop-up {
     #logo {
-      font-size: 4.5vmin; } }
+      padding-left: 30px; } }
 
 .nav-style {
   float: right;
-  padding: 1vh 2vw 0 1vw; }
+  padding: 2vh 0vw 0 0.6vw; }
+  @media screen and (min-width: 0px) and (max-width: 380px) {
+    .nav-style {
+      margin-left: 2vw; } }
+  @media screen and (min-width: 600px) {
+    .nav-style {
+      padding: 2vh 1vw 0 1vw; } }
   .nav-style a {
     color: black;
-    font: 1.1vmax;
-    font-family: Arial; }
-    @media screen and (min-width: 0px) and (max-width: 380px) {
+    font-size: 2vw;
+    font-family: Verd; }
+    @media screen and (min-width: 600px) {
       .nav-style a {
-        font-size: 1.9vmin; } }
-    @media screen and (min-width: 600px) and (max-width: 900px) {
-      .nav-style a {
-        font-size: 1.7vmax; } }
-    @media screen and (min-width: 360px) and (max-width: 599px) {
-      .nav-style a {
-        font-size: 1.7vmax; } }
+        font-size: 1.8vw; } }
+    .nav-style a:link, .nav-style a:active {
+      list-style-type: none;
+      text-decoration: none; }
 
 nav ul li {
   display: inline-block;
   text-decoration: none; }
-
-nav ul li a:hover {
-  font: 1.2vmax Ariel thick;
-  font-weight: bold;
-  text-decoration: none; }
+  nav ul li a {
+    font-size: 2px; }
+    nav ul li a a:hover {
+      font: 1px Ariel thick;
+      font-weight: bold;
+      text-decoration: none; }
 
 #cart-icon {
   margin-top: -0.5vh;
-  font-size: 2vmax;
+  padding-right: 2vw;
+  font-size: 3vw;
   color: #3e1518;
-    color-border: none; }
-  @media screen and (min-width: 360px) and (max-width: 599px) {
-    #cart-icon {
-      font-size: 2vmax;
-      margin-top: 0vh; } }
+  border: none; }
 
 .simpleCart_quantity {
   color: #fff;
-  font-size: 10px;
+  font-size: 2vw;
   background-color: #650303;
   position: absolute;
   top: 1%;
-  left: 100%;
-  -webkit-transform: translate(5%, -20%);
-  -moz-transform: translate(10%, -10%);
-  transform: translate(5%, -20%);
-  padding: 2px 5px;
+  left: 97%;
+  transform: translate(10%, -10%);
+  padding: 1vw;
   border-radius: 100%; }
-  @media screen and (min-width: 0px) and (max-width: 601px) {
-    .simpleCart_quantity {
-      left: 97%; } }
   @media screen and (min-width: 600px) and (max-width: 900px) {
     .simpleCart_quantity {
       left: 97%;
-      font-size: 8px;
-      padding: 7px 7px; } }
+      font-size: 1.5vw; } }
   @media screen and (min-width: 901px) {
     .simpleCart_quantity {
-      left: 97.5%;
-      font-size: 12px;
-      padding: 5px 7px; } }
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0; }
-
-.overlay:target {
-  visibility: visible;
-  opacity: 1; }
-
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out; }
-
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif; }
-
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333; }
-
-.popup .close:hover {
-  color: #06D85F; }
-
-.popup .content {
-  max-height: 30%;
-  overflow: auto; }
+      left: 96%;
+      font-size: 1vw; } }
 
 table {
   border-spacing: 2vw;
