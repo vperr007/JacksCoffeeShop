@@ -1,7 +1,7 @@
 @import "mediaq"
 
 body
-  background-image: url('https://c1.staticflickr.com/3/2894/33856270151_93e60fc9a6_h.jpg')
+  background-image: url('home-compressor.jpg')
   background-size: 100% 103%
   background-repeat: no-repeat
   height: 100vh
@@ -12,19 +12,24 @@ nav ul
   li
     display: inline-block
     padding: 1vh 2vw 2vh 0
-    border-bottom: 1vw dotted #ffffff
+    border-bottom: 4px dotted #ffffff
     text-decoration: none
+    @media #{$laptop}
+      padding-left: 3vw
     a
       color: white
-      font: 1.8vh Ariel
+      font: 1.7vw Ariel
       font-weight: 500
       letter-spacing: 0.2em
+      @media #{$laptop-up}
+        font-size: 1.2vw
       &:hover
         color: yellow
-        font: 1.8vh Ariel thick
-        font-weight: 600
+        font: 1.8vw Ariel thick
+        font-weight: 500
         text-decoration: none
-
+        @media #{$laptop-up}
+          font-size: 1.4vw
 h1
   color: #fff
   font-family: Economica
@@ -34,10 +39,13 @@ h1
   padding-top: 15vh
   letter-spacing: 0.2em
   @media #{$phone}
-    padding-top: 0
-    padding-top: 40vh
-  @media #{$tablet}
     padding-top: 20vh
+  @media #{$tablet}
+    padding-top: 20vw
+  @media #{$laptop}
+    padding-top: 13vh
+    line-height: 10vw
+    font-size: 10vw
 
 #shop-btn
   background-color: rgba(0, 0, 0, 0.3)
@@ -47,6 +55,8 @@ h1
   left: 11%
   position: relative
   font-size: 2vh
+  @media #{$laptop}
+    left: 15%
   a:hover
     color: yellow
     text-decoration: none
