@@ -7,7 +7,43 @@ $(document).ready(function(){
     simpleCart.empty();
     window.location.reload();
   }
+function reloadQuantity(){
+  var numitems = simpleCart.quantity();
+  console.log(numitems);
+
+
+
+  if(numitems===0 ){
+    var shop = "<button class='btn btn-default' id='shop-btn' style='text-align:center'><a href='mainshop.html'>SHOP NOW</a></button>";
+    var emptycart = 'Your Cart is Empty';
+    $('#remove-table').html(emptycart).css({
+      // 'text-align':'center',
+      'font-size': '3vh',
+      'padding-bottom': '4vh'
+    })
+    .after(shop)
+
+    $('shop').css({
+
+    });
+    $('.center-section').css({
+      'text-align':'center'
+    })
+
+  }
+
+}
+reloadQuantity();
+
+
+
+
   });
+
+
+
+
+
 
 simpleCart({
 
@@ -39,6 +75,8 @@ simpleCart({
       label: false
     }
   ],
+  // "div" or "table" - builds the cart as a
+  // table or collection of divs
   cartStyle: "table"
 
 });

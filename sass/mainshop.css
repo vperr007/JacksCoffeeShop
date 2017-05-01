@@ -1,0 +1,163 @@
+#logo {
+  font-family: Economica;
+  letter-spacing: 0.1vw;
+  padding-top: 5px;
+  margin-left: -30px;
+  font-size: 4.5vw; }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    #logo {
+      font-size: 5vw; } }
+  @media laptop-up {
+    #logo {
+      padding-left: 30px; } }
+
+.nav-style {
+  float: right;
+  padding: 2vh 0vw 0 0.6vw; }
+  @media screen and (min-width: 0px) and (max-width: 380px) {
+    .nav-style {
+      margin-left: 2vw; } }
+  @media screen and (min-width: 600px) {
+    .nav-style {
+      padding: 2vh 1vw 0 1vw; } }
+  .nav-style a {
+    color: black;
+    font-size: 2vw;
+    font-family: Verdana; }
+    @media screen and (min-width: 600px) {
+      .nav-style a {
+        font-size: 1.8vw; } }
+    .nav-style a:link, .nav-style a:active {
+      list-style-type: none;
+      text-decoration: none; }
+
+nav ul li {
+  display: inline-block;
+  text-decoration: none; }
+  nav ul li a {
+    font-size: 2px; }
+    nav ul li a a:hover {
+      font: 1px Ariel thick;
+      font-weight: bold;
+      text-decoration: none; }
+
+#cart-icon {
+  margin-top: -0.5vh;
+  padding-right: 2vw;
+  font-size: 3vw;
+  color: #3e1518;
+  border: none; }
+
+.simpleCart_quantity {
+  color: #fff;
+  font-size: 2vw;
+  background-color: #650303;
+  position: absolute;
+  top: 1%;
+  left: 97%;
+  transform: translate(10%, -10%);
+  padding: 1vw;
+  border-radius: 100%; }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    .simpleCart_quantity {
+      left: 97%;
+      font-size: 1.5vw; } }
+  @media screen and (min-width: 901px) {
+    .simpleCart_quantity {
+      left: 96%;
+      font-size: 1vw; } }
+
+#sidenav {
+  margin-top: 30px;
+  position: absolute; }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    #sidenav {
+      margin-top: -20px; } }
+  #sidenav a:link, #sidenav a:active, #sidenav a:visited {
+    margin: 10px 65px;
+    display: block;
+    font: 16px Ariel #000000;
+    color: black; }
+    @media screen and (min-width: 0px) and (max-width: 601px) {
+      #sidenav a:link, #sidenav a:active, #sidenav a:visited {
+        display: none; } }
+    @media screen and (min-width: 600px) and (max-width: 900px) {
+      #sidenav a:link, #sidenav a:active, #sidenav a:visited {
+        margin: 0px 15px;
+        font-size: 13px; } }
+  #sidenav a:active {
+    font-weight: bold; }
+
+h4 {
+  margin: 16px 65px;
+  display: block;
+  font: 16px Ariel #000000;
+  color: black; }
+  @media screen and (min-width: 0px) and (max-width: 601px) {
+    h4 {
+      display: none; } }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    h4 {
+      margin: 16px 15px; } }
+
+.products-col {
+  margin: -12vh 0 -9vh 20vw; }
+  @media screen and (min-width: 360px) and (max-width: 599px) {
+    .products-col {
+      margin: -12vh 0 -9vh 1vw; } }
+
+.main {
+  z-index: 3;
+  position: relative;
+  padding: 40px 10px 0 0; }
+
+.smaller-img {
+  width: 20vw;
+  height: 27vh; }
+
+figcaption {
+  text-align: left; }
+  figcaption span {
+    font-weight: 700; }
+
+.flex-grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0; }
+
+.col {
+  flex: 0 1 32%;
+  margin: 10px 4px;
+  text-align: center; }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    .col {
+      margin: 10px -2px; } }
+  @media screen and (min-width: 360px) and (max-width: 599px) {
+    .col {
+      flex: 0 1 32%;
+      margin: 10px 2px; } }
+  @media screen and (min-width: 0px) and (max-width: 380px) {
+    .col {
+      flex: 0 1 44%;
+      margin: 10px 1px; } }
+
+h2 {
+  text-align: center;
+  font: 6vmin Verdana black;
+  padding: 1vh 0 2vh 0;
+  margin-right: 6%;
+  font-weight: 700; }
+  @media screen and (min-width: 0px) and (max-width: 601px) {
+    h2 {
+      padding: 5vh 0 1vh 0;
+      font-size: 3vmax; } }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    h2 {
+      padding: 10vh 0 1vh 0;
+      font-size: 5vmin; } }
+  @media screen and (min-width: 901px) {
+    h2 {
+      padding: 8vh 0 1vh 0;
+      margin-right: 2%; } }
+
+/*# sourceMappingURL=mainshop.css.map */
