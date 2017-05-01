@@ -23,7 +23,7 @@
   .nav-style a {
     color: black;
     font-size: 2vw;
-    font-family: Verd; }
+    font-family: Verdana; }
     @media screen and (min-width: 600px) {
       .nav-style a {
         font-size: 1.8vw; } }

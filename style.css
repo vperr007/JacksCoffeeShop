@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://c1.staticflickr.com/3/2894/33856270151_93e60fc9a6_h.jpg");
+  background-image: url("/img/jackhome.jpg");
   background-size: 100% 103%;
   background-repeat: no-repeat;
   height: 100vh; }
@@ -10,18 +10,27 @@ nav ul {
   nav ul li {
     display: inline-block;
     padding: 1vh 2vw 2vh 0;
-    border-bottom: 1vw dotted #ffffff;
+    border-bottom: 4px dotted #ffffff;
     text-decoration: none; }
+    @media screen and (min-width: 901px) and (max-width: 1400px) {
+      nav ul li {
+        padding-left: 3vw; } }
     nav ul li a {
       color: white;
-      font: 1.8vh Ariel;
+      font: 1.7vw Ariel;
       font-weight: 500;
       letter-spacing: 0.2em; }
+      @media screen and (min-width: 901px) {
+        nav ul li a {
+          font-size: 1.2vw; } }
       nav ul li a:hover {
         color: yellow;
-        font: 1.8vh Ariel thick;
-        font-weight: 600;
+        font: 1.8vw Ariel thick;
+        font-weight: 500;
         text-decoration: none; }
+        @media screen and (min-width: 901px) {
+          nav ul li a:hover {
+            font-size: 1.4vw; } }
 
 h1 {
   color: #fff;
@@ -33,11 +42,15 @@ h1 {
   letter-spacing: 0.2em; }
   @media screen and (min-width: 0px) and (max-width: 380px) {
     h1 {
-      padding-top: 0;
-      padding-top: 40vh; } }
+      padding-top: 20vh; } }
   @media screen and (min-width: 600px) and (max-width: 900px) {
     h1 {
-      padding-top: 20vh; } }
+      padding-top: 20vw; } }
+  @media screen and (min-width: 901px) and (max-width: 1400px) {
+    h1 {
+      padding-top: 13vh;
+      line-height: 10vw;
+      font-size: 10vw; } }
 
 #shop-btn {
   background-color: rgba(0, 0, 0, 0.3);
@@ -47,6 +60,9 @@ h1 {
   left: 11%;
   position: relative;
   font-size: 2vh; }
+  @media screen and (min-width: 901px) and (max-width: 1400px) {
+    #shop-btn {
+      left: 15%; } }
   #shop-btn a:hover {
     color: yellow;
     text-decoration: none; }

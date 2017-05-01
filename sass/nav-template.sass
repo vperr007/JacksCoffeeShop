@@ -1,140 +1,69 @@
-
 @import 'mediaq'
 @import 'variablesok'
 
-
-.nav-style a
-  &:link, &:active
-    list-style-type: none
-    text-decoration: none
-
 #logo
   font-family: Economica
-  letter-spacing: 0.3em
+  letter-spacing: 0.1vw
   padding-top: 5px
-  line-height: 3vmax
-  //3vmax
-  margin-left: -20px
-  @media #{$lg-phone}
-    letter-spacing: 0.2em
-    font-size: 3.4vmin
-    line-height: 1.3vmax
-  @media #{$phone}
-    font-size: 3.6vmin
-    letter-spacing: 0.1em
+  margin-left: -30px
+  font-size: 4.5vw
   @media #{$tablet}
-    font-size: 3.5vmin
-  @media #{$laptop-up}
-    font-size: 4.5vmin
-
+    font-size: 5vw
+  @media #{laptop-up}
+    padding-left: 30px
+  // @media #{$laptop-up}
+  //   font-size: 4.5vmin
 
 .nav-style
   float: right
-  padding: 1vh 2vw 0 1vw
+  padding: 2vh 0vw 0 0.6vw
+  @media #{$phone}
+    margin-left: 2vw
+  @media #{$tablet-up}
+    padding: 2vh 1vw 0 1vw
   a
     color: black
-    font: 1.1vmax
-    font-family: Arial
-    @media #{$phone}
-      font-size: 1.9vmin
-    @media #{$tablet}
-      font-size: 1.7vmax
-    @media #{$lg-phone}
-      font-size: 1.7vmax
+    font-size: 2vw
+    font-family: Verdana
+    @media #{$tablet-up}
+      font-size: 1.8vw
+    &:link, &:active
+      list-style-type: none
+      text-decoration: none
 
 nav ul li
   display: inline-block
   text-decoration: none
-
-
-
-nav ul li a:hover
-  font: 1.2vmax Ariel thick
-  font-weight: bold
-  text-decoration: none
+  a
+    font-size: 2px
+    a:hover
+      font: 1px Ariel thick
+      font-weight: bold
+      text-decoration: none
 
 #cart-icon
   margin-top: -0.5vh
-  font-size: 2vmax
-  //2vmax
+  padding-right: 2vw
+  font-size: 3vw
   color: #{$marroon}
-    border: none
-  @media #{$lg-phone}
-    font-size: 2vmax
-    margin-top: 0vh
+  border: none
 
 .simpleCart_quantity
   color: #fff
-  font-size: 10px
+  font-size: 2vw
   background-color: #650303
-  //#e74c3c
   position: absolute
   top: 1%
-  left: 100%
-  -webkit-transform: translate(5%, -20%)
-  -moz-transform: translate(10%, -10%)
-  transform: translate(5%, -20%)
-  padding: 2px 5px
+  left: 97%
+  transform: translate(10%, -10%)
+  padding: 1vw
   //3px 7px
   border-radius: 100%
-  @media #{$phones}
-    left: 97%
-    // padding: 3px 7px
-  // @media #{$lg-phone}
-  //   left: 97.5%
-  //   font-size: 0.7em
+  // @media #{$phones}
+  //   left: 97%
   @media #{$tablet}
     left: 97%
-    font-size: 8px
-    padding: 7px 7px
+    font-size: 1.5vw
   @media #{$laptop-up}
-    left: 97.5%
-    font-size: 12px
-    padding: 5px 7px
-
-.overlay
-  position: fixed
-  top: 0
-  bottom: 0
-  left: 0
-  right: 0
-  background: rgba(0, 0, 0, 0.7)
-  transition: opacity 500ms
-  visibility: hidden
-  opacity: 0
-
-.overlay:target
-  visibility: visible
-  opacity: 1
-
-
-.popup
-  margin: 70px auto
-  padding: 20px
-  background: #fff
-  border-radius: 5px
-  width: 30%
-  position: relative
-  transition: all 5s ease-in-out
-
-.popup h2
-  margin-top: 0
-  color: #333
-  font-family: Tahoma, Arial, sans-serif
-
-.popup .close
-  position: absolute
-  top: 20px
-  right: 30px
-  transition: all 200ms
-  font-size: 30px
-  font-weight: bold
-  text-decoration: none
-  color: #333
-
-.popup .close:hover
-  color: #06D85F
-
-.popup .content
-  max-height: 30%
-  overflow: auto
+    left: 96%
+    font-size: 1vw

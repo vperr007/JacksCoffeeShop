@@ -3,9 +3,10 @@
 #sidenav
   margin-top: 30px
   position: absolute
+  color:black
   @media #{$tablet}
     margin-top: -20px
-  a:link
+  a:link, a:active, a:visited
     margin: 10px 65px
     display: block
     font: 16px Ariel #000000
@@ -15,6 +16,9 @@
     @media #{$tablet}
       margin: 0px 15px
       font-size: 13px
+  a:active
+    font-weight: bold
+
 h4
   margin: 16px 65px
   display: block
